@@ -9,9 +9,6 @@ const appId = "5nRUZGshjHYD9iGK7DXmivWeCitWVAmnok93Mph0";
 Moralis.start({ serverUrl, appId });
 await Moralis.enableWeb3();
 const web3 = new Web3(Moralis.provider);
-const USDTJSON = require('./build/contracts/USDT.json')
-const ContractAddress = '0xdac17f958d2ee523a2206206994597c13d831ec7';
-const USDT = new web3.eth.Contract(USDTJSON.abi, ContractAddress, { from: fromAddress })
 
 
 
